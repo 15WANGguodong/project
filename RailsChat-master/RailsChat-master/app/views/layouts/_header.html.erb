@@ -1,0 +1,73 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <%= link_to root_path, class: 'navbar-brand', style: "color:white" do %>
+          <i class="fa fa-leaf" aria-hidden="true"></i>  畅聊
+      <% end %>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+
+      <% if current_user %>
+
+          <li>
+            <%= link_to chats_path, class: "dropbtn" do %>
+                聊天 <i class="fa fa-wechat"></i>
+            <% end %>
+          </li>
+
+          <li>
+            <%= link_to user_path(current_user), class: "dropbtn" do %>
+                <%= current_user.name %> <span class="glyphicon glyphicon-user"></span>
+            <% end %>
+          </li>
+
+          <li>
+            <a class="dropbtn" data-toggle="modal" data-target="#logout">
+              退出 <span class="	glyphicon glyphicon-off"></span>
+            </a>
+          </li>
+
+
+
+
+          <li>
+             <% else %>
+                  
+                     <a href="#" class="btn btn-primary btn-large" id="login_panel">
+                       <p class="btn text-center"> 登录</p>
+                    </a>
+                  
+      	<% end %>
+          </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<!--删除功能弹出窗-->
+<div id="logout" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:45px"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">你确定要退出吗？</h4>
+      </div>
+      <div class="modal-body">
+        <p>退出后将不可聊天</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <%= link_to sessions_logout_path, method: :delete, class: 'btn btn-primary', role: "button", style: "border-radius: 0;margin:0px;" do %>
+          确定
+        <% end %>
+        <!--<button id="delete" type="button" class="btn btn-primary">确定</button>-->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+

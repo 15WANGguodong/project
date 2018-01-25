@@ -1,0 +1,28 @@
+<div class="live_wrap">
+  <div class="u_header">
+    <h1 class="fl">详细信息</h1>
+    <a href="/chats" class="back fr" >返回聊天界面</a>
+  </div>
+  <div class="u_main">
+    <div class="u_nav">
+      <ul>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="u_mainbody">
+    <div class="width-full container text-center">
+      <div class="" style="padding: 50px;">
+        <%= image_tag "user-icon.png", class: "img-lm img-responsive center-block" %>
+      </div>
+      <div class="text-left center-block" style="width: 200px;padding-left: 30px;">
+        <p class="row">姓名：<%= @user.name%></p>
+        <p class="row">性别：<%= @user.sex%></p>
+        <p class="row">email： <%= @user.email%></p>
+        <p class="row">电话：<%=@user.phonenumber%></p>
+      </div>
+
+    </div>
+
+ </div>
+</div>

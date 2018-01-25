@@ -1,0 +1,131 @@
+<!-- Modal -->
+<div class="modal fade" id="panel_modal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="padding:35px 50px;">
+        <button type="button" class="close" data-dismiss="modal" style="font-size:45px;">&times;</button>
+        <h4><span class="glyphicon glyphicon-lock"></span> 登录</h4>
+      </div>
+      <div class="modal-body" style="padding:40px 100px;">
+
+        <%= form_for(:session, url: sessions_login_path, method: :post, html: {role: 'form'}) do |f| %>
+
+            <div class="form-group">
+              <%= f.label :email, "账号密码登陆" %>
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                <%= f.email_field :email, class: 'form-control', placeholder: "输入邮箱" %>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                <%= f.password_field :password, class: 'form-control', placeholder: "输入密码" %>
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <label><%= f.check_box :remember_me %>记住我</label>
+            </div>
+
+            <%= button_tag(type: "submit", class: "btn btn-primary btn-block") do %>
+                <span class="glyphicon glyphicon-off"></span> 登陆
+            <% end %>
+
+        <% end %>
+      </div>
+
+      <div class="modal-footer" style="text-align: center">
+        
+        <a href="#" class="btn btn-primary btn-large" id="reigster_panel" data-dismiss="modal">
+          <p class="btn text-center">没有账号? 立即注册</p>
+       </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="modal fade" id="reigster_modal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="padding:35px 50px;">
+        <button type="button" class="close" data-dismiss="modal"  style="font-size:45px;">&times;</button>
+        <h4><span class="glyphicon glyphicon-lock"></span>注册 </h4>
+      </div>
+      <div class="modal-body" style="padding:40px 50px;">
+
+        <%= form_for(:session, url: sessions_register_path, method: :post, html: {role: 'form'}) do |f| %>
+            <%= f.label :email, "账号密码注册" %>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                <%= f.text_field :name, class: 'form-control', placeholder: '用户名' %>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                <%= f.email_field :email, class: 'form-control', placeholder: '邮箱' %>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                <%= f.text_field :password, class: 'form-control', placeholder: '密码' %>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="fa fa-transgender"></span></div>
+                <%= f.text_field :sex, class: 'form-control', placeholder: '性别' %>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                <%= f.text_field :phonenumber, class: 'form-control', placeholder: '电话' %>
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <label><%= f.check_box :remember_me %>记住我</label>
+            </div>
+
+            <%= button_tag(type: "submit", class: 'btn btn-primary btn-block') do %>
+                <span class="glyphicon glyphicon-off"></span> 注册
+            <% end %>
+
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<script>
+  $(document).ready(function () {
+    $("#login_panel").click(function (e) {
+      e.preventDefault();
+      $("#panel_modal").modal();
+    });
+    $("#reigster_panel").click(function (e) {
+      e.preventDefault();
+      $("#reigster_modal").modal();
+    });
+  });
+</script>
+
