@@ -88,3 +88,29 @@
  <img src="/RailsChat-master/RailsChat-master/lib/foldroominfo.png" width="700">
  
  
+<br/>对初始项目更改内容<br/>
+<img src="/RailsChat-master/RailsChat-master/lib/1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/2-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/2-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/3-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/3-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/4-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/4-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/4-3.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/5-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/5-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/6-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/6-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/7-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/7-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/8-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/8-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/9-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/9-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/10-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/10-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/11-0.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/11-1.png" width="700">
+<img src="/RailsChat-master/RailsChat-master/lib/11-3.png" width="700">
+
+ 
